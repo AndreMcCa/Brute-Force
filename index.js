@@ -19,7 +19,7 @@ const brute = function (chars, min = 1, max = 3) {
   // проход по длине пароля
   for (let i = min; i <= max; i += 1) {
     if (!state) {
-      generator.call(brute, "", i, chars);
+      generator("", i, chars);
     }
   }
 
